@@ -31,6 +31,7 @@ class ArticlesController extends Controller
     public function store(ArticleRequest $request)
     {
         $article = Article::create($request->all());
+        session()->flash('flash_message', 'Article was stored with success');
 
         if (Request::wantsJson()) {
             return $article;
@@ -58,6 +59,7 @@ class ArticlesController extends Controller
     public function update(ArticleRequest $request, Article $article)
     {
         $article->update($request->all());
+        session()->flash('flash_message', 'Article was updated with success');
 
         if (Request::wantsJson()) {
             return $article;
@@ -69,6 +71,7 @@ class ArticlesController extends Controller
     public function destroy(Article $article)
     {
         $deleted = $article->delete();
+        session()->flash('flash_message', 'Article was removed with success');
 
         if (Request::wantsJson()) {
             return (string) $deleted;
