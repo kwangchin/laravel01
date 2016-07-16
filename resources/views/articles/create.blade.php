@@ -1,7 +1,7 @@
 @extends($layout)
 
 @section('content')
-{!! Form::open(['route' => 'articles.store', 'id' => 'articles-form']) !!}
+{!! Form::open(['route' => 'articles.store', 'data-remote' => $remote]) !!}
     @include ('articles.form', ['submitButtonText' => 'Add Article'])
 {!! Form::close() !!}
 @endsection

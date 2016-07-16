@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Request;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,8 +15,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer('*', function ($view) {
-            $layout = 'layouts.html';
-            $view->with(compact('layout'));
+            $remote = Request::ajax() ? true : null;
+            $layout = $remote ? 'layouts.ajax' : 'layouts.html';
+            $view->with(compact('remote', 'layout'));
         });
     }
 
