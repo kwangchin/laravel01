@@ -1,0 +1,20 @@
+{
+  "name": "laravel01",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Kwang Chin Lee <kwang@incube8.sg>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
