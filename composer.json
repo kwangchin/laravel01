@@ -52,6 +52,8 @@
             "php artisan optimize"
         ],
         "compile": [
+            "npm install laravel-elixir",
+            "npm install main-bower-files",
             "./node_modules/.bin/bower install",
             "./node_modules/.bin/gulp --production"
         ]
