@@ -72,7 +72,7 @@ class ArticleCest
     private function createAnArticle(AcceptanceTester $I, $attributes)
     {
         $I->haveAuthor();
-        $I->click('//a[text()='New Article']');
+        $I->click('//a[text()=\'New Article\']');
         $this->submitTheForm($I, $attributes);
     }
 
