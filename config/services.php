@@ -39,4 +39,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => '133532947079975',
+        'client_secret' => '5e4a58d23d6c722fe8b3d3ebff9a9eac',
+        'redirect' => 'http://localhost:8000/callback',
+    ],
+
 ];

@@ -12,7 +12,8 @@
         "predis/predis": "^1.1",
         "greggilbert/recaptcha": "^2.1",
         "doctrine/dbal": "^2.5",
-        "codeclimate/php-test-reporter": "^0.3.2"
+        "codeclimate/php-test-reporter": "^0.3.2",
+        "laravel/socialite": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

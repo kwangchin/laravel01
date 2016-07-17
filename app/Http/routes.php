@@ -20,3 +20,10 @@ Route::singularResourceParameters();
 Route::resource('articles', 'ArticlesController');
 Route::resource('authors', 'AuthorsController');
 Route::resource('articles.recommendations', 'RecommendationsController', ['only' => ['create', 'store']]);
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/redirect', 'SocialAuthController@redirect');
+Route::get('/callback', 'SocialAuthController@callback');
