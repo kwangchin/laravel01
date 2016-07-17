@@ -9,3 +9,4 @@ Homestead.json
 /bower_components
 /public/js/*
 /public/css/
+dump.rdb
