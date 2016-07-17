@@ -11,4 +11,5 @@ Homestead.json
 /public/css/
 dump.rdb
 
-tests/_output/*
+tests/_output/*c3.php
+build
