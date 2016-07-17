@@ -10,3 +10,5 @@ Homestead.json
 /public/js/*
 /public/css/
 dump.rdb
+
+tests/_output/*
